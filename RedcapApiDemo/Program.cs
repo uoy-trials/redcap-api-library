@@ -115,23 +115,9 @@ You can see here the Death Star orbiting the forest Moon of Endor. Although the 
         };
         static async Task Main(string[] args)
         {
-            /*
-             * This is a demo. This program provides a demonstration of potential calls using the API library.
-             * 
-             * This program runs through all the APIs methods sequentially.
-             * 
-             * Directions:
-             * 
-             * 1. Go into your Redcap instance and create a new project with demographics form.
-             * 2. Turn on longitudinal and add two additional event. Event name should be "Event 1, Event 2, Event 3"
-             *  Important, make sure you designate the instrument to atleast one event
-             * 3. Create a folder in C: , name it redcap_download_files
-             * 4. Create a text file in that folder, save it as test.txt
-             * 5. Add a field in the project that was created; the field type should contain file upload, name it "protocol_upload"
-             * This allows the upload file method to upload files
-             * 
-             */
-            await InitializeDemo();
+            var api = new RedcapApi("apiurl");
+
+            var projectIsProduction= await api.ProjectIsProductionStatusAsync("");
         }
         static async Task InitializeDemo()
         {
