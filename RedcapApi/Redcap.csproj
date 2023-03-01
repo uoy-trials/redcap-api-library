@@ -19,6 +19,7 @@
 		<Title>Redcap Api</Title>
 		<PackageReleaseNotes>
 			-inital release, clone of https://github.com/cctrbic/redcap-api 1.3.1
+			-new API to determine if the redcap project is in production
 		</PackageReleaseNotes>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<GenerateDocumentationFile>True</GenerateDocumentationFile>
