@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
-
+using System.Xml.Linq;
 using Newtonsoft.Json;
 
 using Redcap.Interfaces;
@@ -3029,6 +3030,24 @@ namespace Redcap
             }
         }
 
+        public async Task<bool> ProjectIsProductionStatusAsync(string token)
+        {
+            this.CheckToken(token);
+
+            var payload = new Dictionary<string, string>
+            {
+                { "token", token },
+                { "content", Content.Project.GetDisplayName() }
+            };
+
+            var result = await this.SendPostRequestAsync(payload, _uri);
+
+            var projectInfoDoc = XDocument.Parse(result);
+
+            var inProductionElement = projectInfoDoc.Root.Elements().Where(e => e.Name.LocalName == "in_production").Single();
+
+            return inProductionElement.Value == "1";
+        }
         #endregion Projects
         #region Records
         /// <summary>
