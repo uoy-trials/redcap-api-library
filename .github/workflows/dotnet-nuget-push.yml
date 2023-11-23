@@ -16,7 +16,10 @@ jobs:
         source-url: https://nuget.pkg.github.com/uoy-trials/index.json
       env:
         NUGET_AUTH_TOKEN: ${{secrets.UOY_TRIALS_NUGET_PUSH_TOKEN}}
-    - name: Build solution and generate NuGet package
+
+    - name: Build
+      run: dotnet build --configuration Release
+    - name: generate NuGet package
       run: |  
           cd RedcapApi
           dotnet pack -c Release -o out
