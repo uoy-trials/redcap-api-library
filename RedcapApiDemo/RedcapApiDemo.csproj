@@ -12,6 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RedcapApi\RedcapApi.csproj" />
+    <ProjectReference Include="..\RedcapApi\RedcapAPI.csproj" />
   </ItemGroup>
 </Project>
