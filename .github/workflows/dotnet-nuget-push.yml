@@ -18,7 +18,7 @@ jobs:
         NUGET_AUTH_TOKEN: ${{secrets.UOY_TRIALS_NUGET_PUSH_TOKEN}}
 
     - name: Build
-      run: dotnet build --configuration Release
+      run: dotnet build RedcapApi.sln --configuration Release
     - name: generate NuGet package
       run: |  
           cd RedcapApi
