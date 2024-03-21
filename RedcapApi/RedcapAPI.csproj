@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>netstandard2.1</TargetFramework>
+		<TargetFramework>net8.0</TargetFramework>
 		<Authors>Michael Tran,Tom Pool</Authors>
 		<Company>York Trials Unit</Company>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<RepositoryUrl>https://github.com/uoy-trials/redcap-api-library</RepositoryUrl>
 		<Description>This library allows applications on the .NET platform to make http calls to REDCap instances.</Description>
 		<Product>Redcap Api Library</Product>
-		<Version>1.0.0</Version>
-		<AssemblyVersion>1.0.0</AssemblyVersion>
+		<Version>1.3.3</Version>
+		<AssemblyVersion>1.3.3</AssemblyVersion>
 		<PackageTags>redcap api library ytu</PackageTags>
 		<OutputType>Library</OutputType>
 		<NeutralLanguage>en</NeutralLanguage>
-		<FileVersion>1.0.0</FileVersion>
+		<FileVersion>1.3.3</FileVersion>
 		<Copyright>https://github.com/cctrbic/redcap-api/blob/master/LICENSE.md</Copyright>
 		<PackageIcon>ytu.png</PackageIcon>
 		<Title>Redcap Api</Title>
@@ -37,10 +37,11 @@
 		<None Remove="ytu.png" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
-		<PackageReference Include="Serilog" Version="2.12.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="Serilog" Version="3.1.1" />
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
 		<PackageReference Include="System.ValueTuple" Version="4.5.0" />
+		<PackageReference Include="System.ComponentModel" Version="4.3.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="ytu.png" Pack="true" Visible="false" PackagePath="" />
