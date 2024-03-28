@@ -1,4 +1,4 @@
-﻿namespace Redcap.Models
+﻿namespace RedcapApi.Models
 {
     /// <summary>
     /// normal - blank/empty values will be ignored [default]

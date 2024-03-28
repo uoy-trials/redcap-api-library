@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Newtonsoft.Json;
 
-using Newtonsoft.Json;
-
-namespace Redcap.Models
+namespace RedcapApi.Models
 {
     /// <summary>
     /// Data Access Group 
