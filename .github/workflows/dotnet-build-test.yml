@@ -5,7 +5,7 @@ name: .NET build/test
 
 on:
   push:
-    branches: [ "main", "7-address-failing-workflows" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
