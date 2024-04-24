@@ -1,11 +1,10 @@
 ﻿using Newtonsoft.Json;
-using Redcap;
-using Redcap.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using RedcapApi.Models;
 using Tynamix.ObjectFiller;
 
 namespace RedcapApiDemo
@@ -115,7 +114,7 @@ You can see here the Death Star orbiting the forest Moon of Endor. Although the 
         };
         static async Task Main(string[] args)
         {
-            var api = new RedcapApi("apiurl");
+            var api = new RedcapApi.Api.RedcapApi("apiurl");
 
             var projectIsProduction= await api.ProjectIsProductionStatusAsync("");
         }
@@ -170,7 +169,7 @@ You can see here the Death Star orbiting the forest Moon of Endor. Although the 
             Console.ReadLine();
 
             Console.WriteLine("Creating a new instance of RedcapApi");
-            var redcap_api_2_0_0 = new RedcapApi(_uri);
+            var redcap_api_2_0_0 = new RedcapApi.Api.RedcapApi(_uri);
             Console.WriteLine($"Using {_uri.ToString()} for redcap api endpoint.");
 
             #region ExportLoggingAsync()

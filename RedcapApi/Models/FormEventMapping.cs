@@ -1,4 +1,4 @@
-﻿namespace Redcap.Models
+﻿namespace RedcapApi.Models
 {
     /// <summary>
     /// Event for redcap longitudinal projects.

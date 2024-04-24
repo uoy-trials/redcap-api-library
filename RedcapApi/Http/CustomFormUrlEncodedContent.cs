@@ -4,7 +4,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 
-namespace Redcap.Http
+namespace RedcapApi.Http
 {
     /// <summary>
     /// https://stackoverflow.com/a/23740338

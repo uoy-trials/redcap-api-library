@@ -1,9 +1,6 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Redcap.Models
+namespace RedcapApi.Models
 {
     /// <summary>
     /// A single repeat instance in redcap

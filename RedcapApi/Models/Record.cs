@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Redcap.Models
+namespace RedcapApi.Models
 {
     /// <summary>
     /// A record should contain a set of key/value pair.
