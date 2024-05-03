@@ -1,7 +1,6 @@
-﻿using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
-namespace Redcap.Models
+namespace RedcapApi.Models
 {
     /// <summary>
     /// Redcap Content Model

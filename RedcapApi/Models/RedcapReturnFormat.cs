@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Redcap.Models
+namespace RedcapApi.Models
 {
     /// <summary>
     /// Specifies the format of error messages

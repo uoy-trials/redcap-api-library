@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Redcap.Models
+namespace RedcapApi.Models
 {
     /// <summary>
     /// The data format which the Redcap API endpoint should receive.

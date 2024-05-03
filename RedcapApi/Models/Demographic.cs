@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Redcap.Models
+namespace RedcapApi.Models
 {
     /// <summary>
     /// Simplified demographics instrument that we can test with.

@@ -7,16 +7,13 @@ using System.Net.Http.Headers;
 using System.Threading.Tasks;
 using System.Xml.Linq;
 using Newtonsoft.Json;
-
-using Redcap.Interfaces;
-using Redcap.Models;
-using Redcap.Utilities;
-
+using RedcapApi.Interfaces;
+using RedcapApi.Models;
+using RedcapApi.Utilities;
 using Serilog;
-
 using static System.String;
 
-namespace Redcap
+namespace RedcapApi.Api
 {
     /// <summary>
     /// This api interacts with redcap instances. https://project-redcap.org

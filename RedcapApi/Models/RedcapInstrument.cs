@@ -1,6 +1,6 @@
 ﻿using Newtonsoft.Json;
 
-namespace Redcap.Models
+namespace RedcapApi.Models
 {
     /// <summary>
     /// Instrument in a redcap project
