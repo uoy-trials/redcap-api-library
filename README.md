@@ -1,12 +1,12 @@
-[![Build Status](https://dev.azure.com/cctrbic/redcap-api/_apis/build/status/redcap-api?branchName=master)](https://dev.azure.com/cctrbic/redcap-api/_build/latest?definitionId=122&branchName=master)
-
-[![NuGet](https://img.shields.io/nuget/dt/RedcapApi.svg?style=for-the-badge)](https://www.nuget.org/packages/RedcapAPI) 
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)](https://github.com/cctrbic/redcap-api/blob/master/LICENSE.md)
-
-Project Feedback, using REDCap of course: https://redcap.vcu.edu/surveys/?s=KJLHWRTJYA
-
-# REDCap API Library for .NET
+# YTU REDCap API Library for .NET
 The REDCap Api Library for .NET provides the ability to interact with REDCap programmatically using various .NET languages(C#,F#,VB.NET);
+
+- Repo-Status: Active
+- Repo-Contents: Library
+- Repo-Service-Name: YTU REDCap API Library for .NET
+- Repo-Ownership-Rating: 2
+- Repo-Quality-Rating: 5
+- Repo-Next-Review-Due: 2025-05-09
 
 __Prerequisites__
 1.  Local redcap instance installed (visit https://project-redcap.org) if you need to download files(assuming you have access)
