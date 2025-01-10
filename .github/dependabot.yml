@@ -1,0 +1,43 @@
+version: 2
+
+# Define registry for uoy-trials nuget 
+# See link for generating a PAT for use here. https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-nuget-registry
+# They need to be saved in dependabot secrets https://github.com/organizations/uoy-trials/settings/secrets/dependabot
+#registries:
+#  nuget-uoy-trials:
+#    type: nuget-feed
+#    url: https://nuget.pkg.github.com/uoy-trials/index.json
+#    username: ${{secrets.UOY_TRIALS_NUGET_USERNAME}}
+#    password: ${{secrets.UOY_TRIALS_NUGET_PASSWORD}}
+
+updates:
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly" # Default Monday
+    labels:
+      - "dependencies"
+      - "to discuss"
+    reviewers: 
+      - "uoy-trials/code-reviewers"
+    commit-message:
+      prefix: "GH Actions" # 'GH Actions: ' + standard dependabot title
+
+  # Maintain dependencies for nuget
+  - package-ecosystem: "nuget"
+#    registries:
+#      - "nuget-uoy-trials"
+    directory: "/"
+    schedule:
+      interval: "daily" # Weekdays Monday-Friday
+    ignore:
+      - dependency-name: "Microsoft.*"
+        update-types: [version-update:semver-major]
+    labels:
+      - "dependencies"
+      - "to discuss"
+    reviewers: 
+      - "uoy-trials/code-reviewers"
+    commit-message:
+      prefix: "Nuget" # 'Nuget: ' + standard dependabot title
